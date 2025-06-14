@@ -2,8 +2,11 @@ import discord
 from discord.ext import commands
 import asyncio
 import os
-import json
+from dotenv import load_dotenv  # Pastikan python-dotenv ada
 import logging
+
+# Load .env file (untuk lokal development)
+load_dotenv()
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -32,13 +35,11 @@ async def on_ready():
 @bot.event
 async def on_member_join(member):
     """Handle member join events for welcome messages"""
-    # This will be handled by the welcome cog
     pass
 
 @bot.event
 async def on_member_remove(member):
     """Handle member leave events for goodbye messages"""
-    # This will be handled by the welcome cog
     pass
 
 async def load_cogs():
@@ -60,11 +61,13 @@ async def load_cogs():
             print(f'Failed to load {cog}: {e}')
 
 async def main():
+    await load_cogs()
+    TOKEN = os.getenv("TOKEN")
+    if not TOKEN:
+        print("TOKEN tidak ditemukan di environment variables!")
+        return
     async with bot:
-        await load_cogs()
-        # Get token from environment variable
-        token = os.getenv('DISCORD_TOKEN', 'MTM2MTYzODE2NzIzNjcwNjQyNg.GCLbfi.oSEQz7wRjD96OM32zwZ7HOp029Per960jDkc1E')
-        await bot.start(token)
+        await bot.start(TOKEN)
 
 if __name__ == '__main__':
     asyncio.run(main())
