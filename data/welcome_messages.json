@@ -1,0 +1,18 @@
+{
+  "example_guild_id": {
+    "enabled": false,
+    "channel_id": null,
+    "welcome_message": "Welcome {user} to {server}! We now have {member_count} members!",
+    "goodbye_message": "Goodbye {user}! Thanks for being part of {server}.",
+    "welcome_image": null,
+    "goodbye_image": null
+  },
+  "1137592128126586971": {
+    "enabled": true,
+    "channel_id": 1137592128126586974,
+    "welcome_message": "hmm",
+    "welcome_image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ffree-photos-vectors%2Fwelcome&psig=AOvVaw0F-aa5Bm9iajyQc9KbaaDV&ust=1749973647702000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKCl1_618I0DFQAAAAAdAAAAABAE",
+    "goodbye_message": "dadah",
+    "goodbye_image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dreamstime.com%2Fphotos-images%2Fgoodbye.html&psig=AOvVaw1-_vuy2CYo90jOhxJcwu24&ust=1749973522434000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJDM5MO18I0DFQAAAAAdAAAAABAE"
+  }
+}
