@@ -63,7 +63,7 @@ async def main():
     async with bot:
         await load_cogs()
         # Get token from environment variable
-        token = os.getenv('DISCORD_TOKEN', 'MTM2MTYzODE2NzIzNjcwNjQyNg.GBDfux.veKT1kHxf6dkHbHXOyh51o4z_gLNFN1PFbfsZY')
+        token = os.getenv('DISCORD_TOKEN', 'MTM2MTYzODE2NzIzNjcwNjQyNg.GCLbfi.oSEQz7wRjD96OM32zwZ7HOp029Per960jDkc1E')
         await bot.start(token)
 
 if __name__ == '__main__':
